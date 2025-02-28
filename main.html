@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locate JM friends</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #2d4b2d;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+        }
+        .map-section {
+            flex: 1;
+            padding: 20px;
+        }
+        .nav {
+            background-color: #f1c40f;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .about {
+            display: flex;
+            padding: 20px;
+            background-color: white;
+        }
+        .about img {
+            width: 200px;
+            margin-right: 20px;
+        }
+        .campus {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .campus div {
+            position: relative;
+        }
+        .campus img {
+            width: 100%;
+            display: block;
+        }
+        .campus span {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px;
+        }
+        .footer {
+            background-color: #2d4b2d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Where Are Your Jeanne Mance Friends Living Now?</h1>
+    </div>
+    <div class="nav">
+        <a href="#">Links to Google Map →</a>
+        <a href="#">Trinity</a>
+        <a href="#">Redstone</a>
+        <a href="#">Central</a>
+        <a href="#">Athletic</a>
+    </div>
+    <div class="main-content">
+        <div class="sidebar">
+            <h2>What happened to Jeanne Mance?</h2>
+            <p>blablablablablablablablabla...</p>
+        </div>
+        <div class="map-section">
+            <img src="ggmap.png" alt="Jeanne Mance location" style="width: 100%;">
+        </div>
+    </div>
+    <div class="about">
+        <img src="selfie.jpeg" alt="selfie">
+        <p>blablablablablablablablabla...</p>
+    </div>
+    <div class="campus">
+        <div><img src="central_cam.png" alt="Central Campus"><span>Central Campus</span></div>
+        <div><img src="athletic_cam.png" alt="Athletic Campus"><span>Athletic Campus</span></div>
+        <div><img src="trinity_cam.png" alt="Trinity Campus"><span>Trinity Campus</span></div>
+        <div><img src="redstone_cam.png" alt="Redstone Campus"><span>Redstone Campus</span></div>
+    </div>
+    <div class="footer">
+        <p>Contact Info: Erin Oh, Jay Choi, Jules Kim</p>
+    </div>
+</body>
+</html>
