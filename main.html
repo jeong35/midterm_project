@@ -3,45 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locate JM friends</title>
+    <title>Jeanne Mance Friends</title>
     <style>
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
         .header {
-            background-color: #164734;
-            ;
-            color: white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            border: solid 3px;
+            border-color: red;
+            background: #164734;
+            color: #f1c40f;
+            padding-left: 10px;
+            display: inline-flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .header_left {
+            border: solid 3px;
+            border-color: blue;
+            margin-right: 20px;
+        }
+        .logo {
+            width: 40%;
+            margin-top: 10px;
+        }
+        .header_text {
+            border: solid 3px;
+            border-color: violet;
+            /* margin-right: 20px; */
         }
         .header h1 {
-            margin: 0;
+            border: solid 3px;
+            border-color: blue;
+            font-size: 36px;
+            padding-top: 20px;
+            padding-left: 60px;
+            margin-left: 20px;
         }
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: white;
-            padding: 20px;
+        .explaining {
+            border: solid 3px;
+            border-color: yellow;
+            color: white;
+            font-size: 25px;
+            padding-left: 60px;
+            margin-left: 20px;
         }
-        .sidebar {
-            flex: 1;
-            padding: 20px;
-        }
-        .map-section {
-            flex: 1;
-            padding: 20px;
+        .map-section img {
+            border: solid 3px;
+            border-color: black;
+            width: 60%;
+            float: right;
+            flex-grow: 1;
+            flex-shrink: 0;
+            aspect-ratio: 458.45/642.00;
         }
         .nav {
-            background-color: #FFD100;
-            ;
+            border: solid 3px;
+            border-color: mintcream;
+            background-color: #f1c40f;
             padding: 10px;
-            text-align: center;
+            text-align: left;
         }
         .nav a {
             margin: 0 10px;
@@ -49,17 +73,31 @@
             color: black;
             font-weight: bold;
         }
-        .about {
+        .main-content {
+            border: solid 3px;
+            border-color: black;
             display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            padding: 20px;
+        }
+        .about {
+            border: solid 3px;
+            border-color: violet;
+            display: inline-block;
             padding: 20px;
             background-color: white;
         }
         .about img {
+            border: solid 3px;
+            border-color: orange;
             width: 200px;
             margin-right: 20px;
         }
         .campus {
-            display: grid;
+            border: solid 3px;
+            border-color: white;
+            display: inline-block;
             grid-template-columns: repeat(2, 356px);
             gap: 20px;
             justify-content: center;
@@ -67,8 +105,8 @@
         }
         .campus div {
             position: relative;
-            width: 356px;
-            height: 398px;
+            width: 120px;
+            height: 140px;
         }
         .campus img {
             width: 100%;
@@ -77,15 +115,21 @@
             display: block;
         }
         .campus span {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            background: rgba(0, 0, 0, 0.6);
+            border: solid 3px;
+            border-color: gray;
+            text-align: center;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            font-size: 16px;
             color: white;
             padding: 5px;
         }
         .footer {
-            background-color: #2d4b2d;
+            border: solid 3px;
+            border-color: black;
+            background: #164734;
             color: white;
             text-align: center;
             padding: 10px;
@@ -94,7 +138,19 @@
 </head>
 <body>
     <div class="header">
-        <h1>Where Are Your Jeanne Mance Friends Living Now?</h1>
+        <div class = "header_left">
+            <img src="uvm_logo.png" alt="uvm logo" class="logo">
+            <div class = "header_text">
+                <h1>Where Are Your Jeanne Mance Friends Living Now?</h1>
+                <div class="explaining">
+                    <h3>What happened to Jeanne Mance?</h3>
+                    <p>blablablablablablablablabla...</p>
+                </div>
+            </div>
+        </div>
+        <div class="map-section">
+            <img src="ggmap.png" alt="Map Placeholder">
+        </div>
     </div>
     <div class="nav">
         <a href="#">Links to Google Map →</a>
@@ -104,23 +160,16 @@
         <a href="#">Athletic</a>
     </div>
     <div class="main-content">
-        <div class="sidebar">
-            <h2>What happened to Jeanne Mance?</h2>
+        <div class="about">
+            <img src="selfie.jpeg" alt="Group Photo">
             <p>blablablablablablablablabla...</p>
         </div>
-        <div class="map-section">
-            <img src="ggmap.png" alt="Jeanne Mance location" style="width: 458.45px; height: 642px; top: 1px; left: 982px;">
+        <div class="campus">
+            <div><img src="central_cam.png" alt="Central Campus"><span>Central<br>Campus</span></div>
+            <div><img src="athletic_cam.png" alt="Athletic Campus"><span>Athletic<br>Campus</span></div>
+            <div><img src="trinity_cam.png" alt="Trinity Campus"><span>Trinity<br>Campus</span></div>
+            <div><img src="redstone_cam.png" alt="Redstone Campus"><span>Redstone<br>Campus</span></div>
         </div>
-    </div>
-    <div class="about">
-        <img src="selfie.jpeg" alt="selfie">
-        <p>blablablablablablablablabla...</p>
-    </div>
-    <div class="campus">
-        <div><img src="central_cam.png" alt="Central Campus"><span>Central Campus</span></div>
-        <div><img src="athletic_cam.png" alt="Athletic Campus"><span>Athletic Campus</span></div>
-        <div><img src="trinity_cam.png" alt="Trinity Campus"><span>Trinity Campus</span></div>
-        <div><img src="redstone_cam.png" alt="Redstone Campus"><span>Redstone Campus</span></div>
     </div>
     <div class="footer">
         <p>Contact Info: Erin Oh, Jay Choi, Jules Kim</p>
